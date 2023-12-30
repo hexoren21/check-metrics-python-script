@@ -11,7 +11,7 @@ EMAIL_RECEIVER = 'kapel21@o2.pl'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 SMTP_LOGIN = 'przemyslaw.kapelinski'
-SMTP_PASSWORD = 'vfft lbqy khis dafl'
+SMTP_PASSWORD = ''
 
 def send_email(subject, body):
     msg = MIMEText(body)
