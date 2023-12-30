@@ -1,5 +1,6 @@
 import psutil
 import smtplib
+import os
 from email.mime.text import MIMEText
 
 # Konfiguracja
@@ -11,7 +12,7 @@ EMAIL_RECEIVER = 'kapel21@o2.pl'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 SMTP_LOGIN = 'przemyslaw.kapelinski'
-SMTP_PASSWORD = ''
+SMTP_PASSWORD = os.getenv('EMAIL_PASSWORD')
 
 def send_email(subject, body):
     msg = MIMEText(body)
